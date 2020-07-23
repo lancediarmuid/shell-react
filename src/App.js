@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Dashboard from './components/Dashboard'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { Button } from 'antd'
 
 class App extends React.Component {
   render () {
@@ -11,7 +10,7 @@ class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <Dashboard />
+        <Button type="primary">Button</Button>
       </div>
     )
   }
