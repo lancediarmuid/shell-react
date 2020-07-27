@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
-import {Button} from 'antd'
-import {Layout, Menu, Breadcrumb} from 'antd';
+import {Layout, Menu, Row, Col} from 'antd';
+import {Link} from 'react-router-dom';
+import logo from './components/header/logo.svg'
 
 const {Header, Content, Footer} = Layout;
 const {SubMenu} = Menu;
@@ -14,21 +14,30 @@ class App extends React.Component {
 
                 <Layout className="layout">
                     <Header>
-                        <div className="logo"/>
-                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                            <Menu.Item key="1">标记 1</Menu.Item>
+                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+                            <Menu.Item style={{paddingRight: 0,paddingLeft: 0, height: 64}} disabled={true}>
+                                <div className="logo">
+                                    <img src={logo} className="App-logo" style={{height: 64}} alt="logo"/>
+                                </div>
+                            </Menu.Item>
+                            <Menu.Item key="1">
+                                <Link to="/">首页</Link>
+                            </Menu.Item>
                             <SubMenu title="子菜单">
-                                <Menu.Item key="2">标记 2</Menu.Item>
+                                <Menu.Item key="2">
+                                    <Link to="/">标记2</Link>
+                                </Menu.Item>
                             </SubMenu>
-                            <Menu.Item key="3">标记 3</Menu.Item>
+                            <Menu.Item key="3" style={{float: 'right'}}>
+                                <Link to="/">注册</Link>
+                            </Menu.Item>
+                            <Menu.Item key="4" style={{float: 'right'}}>
+                                <Link to="/login">登录</Link>
+                            </Menu.Item>
                         </Menu>
                     </Header>
                     <Content style={{padding: '0 50px'}}>
-                        <div className="site-layout-content">
-                            <header className="App-header">
-                                <img src={logo} className="App-logo" alt="logo"/>
-                            </header>
-                        </div>
+                        {this.props.children}
                     </Content>
                     <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer>
                 </Layout>
