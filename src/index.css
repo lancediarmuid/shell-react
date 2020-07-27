@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.animate-route {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeRoute;
+}
+
+@keyframes fadeRoute {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

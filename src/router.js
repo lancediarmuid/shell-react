@@ -7,14 +7,16 @@ import App from './App'
 export default class ERouter extends React.Component {
     render() {
         return (
-            <HashRouter>
-                <App>
-                    <Switch>
-                        <Route exact={true} path="/" component={MHeader}/>
-                        <Route path="/login" component={Login}/>
-                    </Switch>
-                </App>
-            </HashRouter>
+            <div className="animate-route">
+                <HashRouter>
+                    <App>
+                        <Switch>
+                            <Route exact={true} path="/" component={MHeader}/>
+                            <Route path="/login" component={Login}/>
+                        </Switch>
+                    </App>
+                </HashRouter>
+            </div>
         )
     }
 }

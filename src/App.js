@@ -14,7 +14,7 @@ class App extends React.Component {
 
                 <Layout className="layout">
                     <Header>
-                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+                        <Menu theme="dark" className="TopBar" mode="horizontal" defaultSelectedKeys={['1']}>
                             <Menu.Item style={{paddingRight: 0,paddingLeft: 0, height: 64}} disabled={true}>
                                 <div className="logo">
                                     <img src={logo} className="App-logo" style={{height: 64}} alt="logo"/>
@@ -24,9 +24,11 @@ class App extends React.Component {
                                 <Link to="/">首页</Link>
                             </Menu.Item>
                             <SubMenu title="子菜单">
-                                <Menu.Item key="2">
-                                    <Link to="/">标记2</Link>
-                                </Menu.Item>
+                                <SubMenu title="子菜单2">
+                                    <Menu.Item key="2">
+                                        <Link to="/">Show a dialog</Link>
+                                    </Menu.Item>
+                                </SubMenu>
                             </SubMenu>
                             <Menu.Item key="3" style={{float: 'right'}}>
                                 <Link to="/">注册</Link>
