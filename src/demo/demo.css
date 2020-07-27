@@ -1,0 +1,45 @@
+/* 路由前进时的入场/离场动画 */
+.forward-enter {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.forward-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.forward-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.forward-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* 路由后退时的入场/离场动画 */
+.back-enter {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.back-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.back-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.back-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
