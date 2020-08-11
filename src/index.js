@@ -8,7 +8,7 @@ import LRouter from './demo/OutsideRouter'
 import {HashRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <ERouter/>, document.getElementById('root')
+  <LRouter/>, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
