@@ -33,3 +33,7 @@
 .card-wrap{
     margin-bottom: 20px;
 }
+
+.card-wrap button{
+    margin-right: 10px;
+}

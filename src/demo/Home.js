@@ -27,6 +27,9 @@ export default class Home extends React.Component {
                             <Menu.Item key={'4'}>
                                 <Link to={'/loadings'}>Loadings</Link>
                             </Menu.Item>
+                            <Menu.Item key={'5'}>
+                                <Link to={'/tabs'}>Tabpage</Link>
+                            </Menu.Item>
                         </Menu>
                     </Header>
                     <Content>
