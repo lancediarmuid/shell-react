@@ -6,6 +6,7 @@ import Topic from './Topic';
 import Home from './Home';
 import Loadings from './loading';
 import TabPage from './tabs';
+import Gallery from './gallery';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
 const ANIMATION_MAP = {
@@ -34,6 +35,7 @@ class TRouter extends React.Component {
                                 <Route path={'/about'} component={About}/>
                                 <Route path={'/loadings'} component={Loadings}/>
                                 <Route path={'/tabs'} component={TabPage}/>
+                                <Route path={'/gallery'} component={Gallery}/>
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>

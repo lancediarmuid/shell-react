@@ -30,6 +30,9 @@ export default class Home extends React.Component {
                             <Menu.Item key={'5'}>
                                 <Link to={'/tabs'}>Tabpage</Link>
                             </Menu.Item>
+                            <Menu.Item key={'6'}>
+                                <Link to={'/gallery'}>画廊</Link>
+                            </Menu.Item>
                         </Menu>
                     </Header>
                     <Content>
