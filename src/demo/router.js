@@ -36,6 +36,7 @@ class TRouter extends React.Component {
                                 <Route path={'/loadings'} component={Loadings}/>
                                 <Route path={'/tabs'} component={TabPage}/>
                                 <Route path={'/gallery'} component={Gallery}/>
+                                <Route path={'/loginPage'} component={}/>
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>
