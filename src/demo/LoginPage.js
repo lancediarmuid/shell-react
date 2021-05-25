@@ -1,12 +1,12 @@
-import React from "react";
-import {Form, Card, Input, Button} from "antd";
+import React from "react"
+import { Form, Card, Input, Button } from "antd"
 
-const FormItem = Form.Item;
+const FormItem = Form.Item
 
 class LoginPage extends React.Component {
 
-    render() {
-        const getFieldDecorator = this.props.form;
+    render () {
+        const getFieldDecorator = this.props.form
         return (
             <div>
                 <Card title="登录行内表单">
@@ -17,12 +17,12 @@ class LoginPage extends React.Component {
                                     initialValue: 'Jack',
                                     rules: []
                                 })(
-                                    <Input placeholder="账号"/>
+                                    <Input placeholder="账号" />
                                 )
                             }
                         </FormItem>
                         <FormItem>
-                            <Input placeholder="密码"/>
+                            <Input placeholder="密码" />
                         </FormItem>
                         <FormItem>
                             <Button type="primary">登录</Button>
@@ -34,4 +34,4 @@ class LoginPage extends React.Component {
     }
 }
 
-export default Form.create()(LoginPage);
+export default LoginPage
